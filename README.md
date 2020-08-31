@@ -55,14 +55,161 @@ El artículo realizado por Bran Knowles, Joe Finney, Sophie Beck y James Devine,
 
 **4. MARCO TEÓRICO**
 
-**4.1. Raspberry PI**
+**4.1. Micro:Bit**
 
 *4.1.1. Definición*
 
+BBC microbit es una pequeña tarjeta programable de tan solo 4x5 [cm] diseñada para que el aprendizaje de la programación sea fácil, divertido y al alcance de todos. Tiene un entorno de programación gráfico propio: MakeCode de Microsoft, un sencillo editor gráfico online muy potente. También se puede programar con JavaScript, Python y Scratch (añadiendo una extensión). Gracias a la gran cantidad de sensores que incorpora, sólo con la tarjeta se pueden llevar a cabo centenares de proyectos. (“BBC Placa Micro:Bit - Controlador BricoGeek | BricoGeek.com,” n.d.)
+
+*4.1.2. Partes que constituyen la Microbit*
+
+-	Microcontrolador ARM Cortex-M0
+-	Radio Bluetooth Nordic nRF51
+-	25 LEDs programables individualmente
+-	2 botones programables
+-	5 pines de entrada y salida, 3 para entrada y salida de datos y 2 para alimentación (Vcc y GND).
+-	Sensor de Luz y Temperatura
+-	Sensores de movimiento (acelerómetro y brújula)
+-	Comunicación inalámbrica, vía Radio y Bluetooth
+-	USB y Conector para batería externa
+
 ![]()
 
-**Figura 1**
+**Figura 1: Vista previa de la placa Micro:Bit**
 
+Fuente: http://rogerbit.com/wprb/2019/04/microbit-primeros-pasos-programacion-por-pc-x-cable-y-smartphone-x-bluetooth-dfrobot/
+
+*4.1.3. Generación de Imágenes*
+
+La función de imagen posee una cuadrícula de 5x5 de LED rojos, que permite tener un amplio control sobre la pantalla para crear todo tipo de efectos como imágenes integradas para mostrar en la pantalla. 
+
+Ejemplo No. 1: 
+
+Programación de emoticón feliz, se escribe:
+
+![]()
+
+Se obtiene:
+
+![]()
+
+**Figura 2: Visualización de la imagen por medio de datos ingresdados en una matriz**
+
+Fuente: 
+
+Adicional, se puede personalizar la figura que se requiere que aparezca de la siguiente manera:
+
+![]()
+
+El 0 representa el LED apagado y 5 prendido, podemos poner el número 7, 8 0 9 si se pretende que sea más iluminado el LED. Además, se puede observar cómo se encuentran distribuidos los números en una matriz de 5x5 al igual que los LED’s en las placas, es decir cada número representa cada LED respectivamente.
+
+*4.1.4. Uso de botones*
+
+Es fácil de recordar: la salida es lo que el dispositivo envía al mundo, mientras que la entrada es lo que ingresa al dispositivo para que lo procese. El medio de entrada más obvio en el microbit son sus dos botones, etiquetados como A y B. De alguna manera, necesitamos que MicroPython reaccione a las pulsaciones de botones. (“Buttons — BBC micro:bit MicroPython 1.0.1 documentation,” n.d.)
+
+Esto es notablemente simple:
+
+![]()
+
+Todo lo que hace este script es dormir durante diez mil milisegundos (es decir, 10 segundos) y luego se desplaza la cantidad de veces que presionó el botón A. La función de suspensión hará que el micro: bit se suspenda durante una cierta cantidad de milisegundos. Si desea hacer una pausa en su programa, así es como se hace. Una función es como un método, pero no está unida por un punto a un objeto. Hay un objeto llamado button_a y te permite obtener la cantidad de veces que se ha presionado con el método get_presses. Dado que get_presses da un valor numérico y display.scroll solo muestra caracteres, necesitamos convertir el valor numérico en una cadena de caracteres. Hacemos esto con la función str(abreviatura de "cadena"). Este convierte cosas en cadenas de caracteres.(“Buttons — BBC micro:bit MicroPython 1.0.1 documentation,” n.d.).
+
+![]()
+
+**Figura 3: Visualización del logaritmo implementado en la consola**
+
+Fuente: 
+
+*4.1.5. Uso del acelerómetro*
+
+Este objeto le da acceso al acelerómetro integrado. El acelerómetro también proporciona funciones de conveniencia para detectar gestos. Los gestos reconocidos son: arriba, abajo, izquierda, derecha, boca arriba, boca abajo, caída libre, 3g, 6g, 8g, agitar. De forma predeterminada, MicroPython establece el rango del acelerómetro en +/- 2g, actualmente no es posible cambiar el rango del acelerómetro en MicroPython. El acelerómetro devuelve un valor en el rango 0..1024 para cada eje, que luego se escala en consecuencia.
+
+4.1.5.1. Funciones
+
+***microbit.accelerometer.get_x ()***
+
+Obtenga la medida de la aceleración en el eje x, como un número entero positivo o negativo, según la dirección. La medida se da en mili-seg. De forma predeterminada, el acelerómetro está configurado con un rango de +/- 2s, por lo que este método regresará dentro del rango de +/- 2000 ms.
+
+***microbit.accelerometer.get_y ()***
+
+Obtenga la medida de la aceleración en el eje y, como un número entero positivo o negativo, según la dirección. La medida se da en mili-seg. De forma predeterminada, el acelerómetro está configurado con un rango de +/- 2s, por lo que este método regresará dentro del rango de +/- 2000 ms.
+
+***microbit.accelerometer.get_z ()***
+
+Obtenga la medida de la aceleración en el eje z, como un número entero positivo o negativo, según la dirección. La medida se da en mili-seg. De forma predeterminada, el acelerómetro está configurado con un rango de +/- 2s, por lo que este método regresará dentro del rango de +/- 2000 ms.
+
+***microbit.accelerometer.get_values ()***
+
+Obtenga las medidas de aceleración en todos los ejes a la vez, como una tupla de tres elementos de números enteros ordenados como X, Y, Z. De forma predeterminada, el acelerómetro está configurado con un rango de +/- 2s, por lo que X, Y y Z estar dentro del rango de +/- 2000 ms.
+
+***microbit.accelerometer.current_gesture ()***
+
+Devuelve el nombre del gesto actual.
+
+***microbit.accelerometer.is_gesture (nombre)***
+
+Devuelve Verdadero o Falso para indicar si el gesto nombrado está activo actualmente.
+
+***microbit.accelerometer.was_gesture (nombre)***
+
+Devuelve Verdadero o Falso para indicar si el gesto nombrado estuvo activo desde la última llamada.
+
+***microbit.accelerometer.get_gestures ()***
+
+Devuelve una tupla del historial de gestos. El más reciente aparece en último lugar. También borra el historial de gestos antes de regresar.
+
+![]()
+
+**Figura 5: Gráfico que muestra el funcionamiento bpasico del acelerómetro**
+
+Fuente: https://www.ingmecafenix.com/automatizacion/acelerometro/
+
+*4.1.6. Uso de la brújula*
+
+Este módulo le permite acceder a la brújula electrónica incorporada. Antes de usar, la brújula debe calibrarse; de lo contrario, las lecturas pueden ser incorrectas. La no calibración de la brújula hará que su programa se detenga hasta que se complete la calibración. La calibración consiste en un pequeño juego para dibujar un círculo en la pantalla LED girando el dispositivo.
+
+4.1.6.1. Funciones
+
+***microbit.compass.calibrate ()***
+
+Inicia el proceso de calibración. Se le mostrará al usuario un mensaje instructivo, luego de lo cual deberá girar el dispositivo para dibujar un círculo en la pantalla LED
+
+***microbit.compass.is_calibrated ()***
+
+Devuelve Verdadero si la brújula se ha calibrado correctamente y devuelve Falso en caso contrario.
+
+***microbit.compass.clear_calibration ()***
+
+Deshace la calibración, haciendo que la brújula vuelva a estar sin calibrar.
+
+***microbit.compass.get_x ()***
+
+Da la lectura de la fuerza del campo magnético en el eje x en nano tesla, como un número entero positivo o negativo, dependiendo de la dirección del campo.
+
+***microbit.compass.get_y ()***
+
+Da la lectura de la fuerza del campo magnético en el eje y en nano tesla, como un número entero positivo o negativo, dependiendo de la dirección del campo.
+
+***microbit.compass.get_z ()***
+
+Da la lectura de la fuerza del campo magnético en el eje z en nano tesla, como un número entero positivo o negativo, dependiendo de la dirección del campo.
+
+***microbit.compass.heading ()***
+
+Da el rumbo de la brújula, calculado a partir de las lecturas anteriores, como un número entero en el rango de 0 a 360, que representa el ángulo en grados, en el sentido de las agujas del reloj, con el norte como 0.
+
+***microbit.compass.get_field_strength ()***
+
+Devuelve una indicación entera de la magnitud del campo magnético alrededor del dispositivo en nano tesla.
+
+![]()
+
+**Figura 6: Brújula como muestra**
+
+Fuente: https://www.importancia.org/brujula.php
+
+*4.1.7. Uso del sensor de temperatura*
+
+Este módulo permite acceder al termómetto electrónico incorporado. 
 
 **5. DIAGRAMAS**
 
@@ -70,7 +217,7 @@ Un ejemplo sencillo de la implementación ...
 
 ![]()
 
-**Figura 9**
+**Figura 1: Vista previa de la placa Micro:Bit**
 
 **6. LISTA DE COMPONENTES**
 - Create with Code
