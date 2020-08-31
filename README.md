@@ -404,10 +404,56 @@ La placa Micro:bit cuenta con una brújula que puede ser utilizada para distinto
 
 ![]()
 
+Se importa la librería microbit para poder utilizar la placa Micro:bit.
+
+![]()
+
+Para poder usar la brújula primero se la deba calibrar y esto se lo hace mediante la funcion calibrate(), es una funcion propia de la brujula. 
+
+![]()
+
+Se utiliza un bucle while infinito para que el programa se mantenga corriendo. La validación que realiza el programa es con el botón A, cuando se presiona este botón se mostrará en el display la ubicación en la que el usuario se encuentra. 
+La ubicación es mostrada a través de la función heading() de la brújula, esta función da el rumbo que ha tomado la brújula a partir de mediciones anteriores como un número de tipo int en el rango de 0° a 360°, tomando como punto de referencia el Norte. Como el display solo admite variables tipo string se debe convertir la medición de la brújula de tipo int a tipo string utilizando la función str().
+
+![]()
+
+![]()
+
+**Figura 15:Visualización de la posición a través del display de la placa Micro:bit**
+
+*7.6. Brújula*
+
+Para desarrollar el problema de la música, se debe implementar otro simulador llamado “micro:bit”. El presente simulador que permite programar la placa utilizando el lenguaje de programación Python y por medio de programación por bloques. Para poder utilizar el simulador se debe ingresar al siguiente link.
+
+https://makecode.microbit.org/#editor
+
+La placa Micro:bit cuenta con un radio y junto con este dispositivo se cuenta también con la librería “music”. Esta librería permite realizar programas que sean capaces de emitir sonido que va de la emisión de las notas musicales en forma de tonos hasta emisión de melodías completas. 
+
+![]()
+
+El programa empieza con un bucle while infinito, debido a que no se cambia la condición inicial. Una vez que ingresa en el bucle, el problema realiza la primera validación. El comando input.button_is_pressed(Button.A) permite obtener el estado en el que se encuentra el botón, en este caso el botón A. Si el botón A es presionado entonces se configura el volumen del dispositivo por medio del comando music.set_volume(50) que permite cambiar el valor del volumen predeterminado. En este caso se cambia el valor predeterminado de 127 al valor de 50. Por medio del comando music.play_melody("E D G F B A C5 B ", 200) se puede reproducir la melodía que se sea de las que se encuentran grabadas en la placa, para el caso del botón A se colocó la melodía Rising y para el botón B se colocó la melodía Mystery.  
+
+En la imagen se puede observar la simulación del código de la música. Una forma de verificar que el programa funciona correctamente es visualizando en la parte baja de la placa. A lado del pin 0 se puede visualizar el número -8, este número demuestra que el programa funciona correctamente. 
+
+![]()
+
+**Figura 16: Simulación de la música en la plataforma makecode.microbit**
+
+Al igual que con el botón A, en botón B se puede verificar su correcto funcionamiento por medio de número -8 que aparece cuando este es presionado. 
+
+![]()
+
+**Figura 17: Simulación de la música en la plataforma makecode.microbit**
+
+Para una mejor comprensión del código, la plataforma permite la utilización de la programación por bloques convirtiendo el código de lenguaje Python a lenguaje por bloques. 
+
+![]()
+
+**Figura 18: Código del programa de música en lenguaje de programación por bloques**
+
 **8. DESCRIPCIÓN DE PRERREQUISITOS Y CONFIGURACIÓN**
 
-Para poder ejecutar de manera eficiente y sin ningún tipo de inconveniente se debe tener los siguientes componentes.
-- Computadora, sea de escritorio....
+Para poder ejecutar de manera eficiente y sin ningún tipo de inconveniente, simplemente deberá tener una computadora con acceso a internet para ingresar a https://create.withcode.uk/ o a https://makecode.microbit.org/#editor.
 
 **9. CONCLUSIONES**
 1.	La investigación realizada mostró que los componentes periféricos de la placa son componentes sencillos de utilizar. La información encontrada para el presente documento fue precisa y concreta, además develó que la característica más importante de este dispositivo, el cual es su accesibilidad. La placa Micro:bit puede ser accesible tanto para personas expertas en electrónica como para niños de primaria. 
@@ -430,8 +476,6 @@ Para poder ejecutar de manera eficiente y sin ningún tipo de inconveniente se d
 
 BBC Placa Micro:Bit - Controlador BricoGeek | BricoGeek.com. (n.d.).
 
-Buttons — BBC micro:bit MicroPython 1.0.1 documentation. (n.d.).
-
 Knowles, B., Finney, J., Beck, S., & Devine, J. (2018). What children’s imagined uses of the BBC micro:bit tells us about designing for their IoT privacy, security and safety. IET Conference Publications, 2018(CP740), 15 (6 pp.)-15 (6 pp.). https://doi.org/10.1049/cp.2018.0015
 
 Videnovik, M., Zdravevski, E., Lameski, P., & Trajkovik, V. (2018). The BBC Micro:bit in the international classroom: Learning experiences and first impressions. 2018 17th International Conference on Information Technology Based Higher Education and Training, ITHET 2018, 1–5. https://doi.org/10.1109/ITHET.2018.8424786
@@ -439,6 +483,61 @@ Videnovik, M., Zdravevski, E., Lameski, P., & Trajkovik, V. (2018). The BBC Micr
 Vostinar, P., & Kneznik, J. (2020). Experience with teaching with BBC micro:bit. IEEE Global Engineering Education Conference, EDUCON, 2020–April, 1306–1310. https://doi.org/10.1109/EDUCON45650.2020.9125278
 
 **13. ANEXOS**
+
 *13.1 Manual de Usuario*
 
+15.1.1 Páginas Web y Archivos
 
+Primero se debe descargar el archivo adjunto donde se encuentran el código de todos los programas que describen el funcionamiento básico de cada una de las siguientes funcionalidades de la placa Micro:bit; estas son Imágenes, Botones, Acelerómetro, Sensor de Temperatura, Brújula y Música. 
+El archivo que contiene todos los programas es un archivo con extensión .txt llamado “Codigo Programas Micro:bit”. El archivo, además de tener el código de todos los programas para cada una de las funcionalidades, posee una pequeña descripción de lo que realiza cada programa.  
+De todas las funcionalidades descritas, la única que debe ser ejecutada en otra página es la funcionalidad de la Música. Para el resto de funcionalidades se puede utilizar la página web de créate.withcode.uk.
+Página web para las funcionalidades Imágenes, Botones, Acelerómetro, Brújula y Sensor de Temperatura:
+https://create.withcode.uk/
+Página web para la funcionalidad Música: 
+https://makecode.microbit.org/
+
+15.1.2 Ejecución de los programas para las funcionalidades Imágenes, Botones, Acelerómetro, Brújula y Sensor de Temperatura. 
+
+Luego de haber descargado el archivo .txt que contiene todos los programas, se debe ingresar a la página web antes descrita. Cuando se haya ingresado debe aparecer la siguiente pantalla.
+
+![]()
+
+Primero se debe borrar el código que viene por defecto en la página web, esto con la finalidad de copiar y pegar uno de los códigos de cualquiera de las cinco funcionalidades. 
+
+![]()
+
+![]()
+
+En las anteriores imágenes se ve un ejemplo del procedimiento descrito. Para este ejemplo se seleccionó el código de la función Botones del archivo .txt y el código fue pegado en la página web. Para poder correr el programa se debe hacer click en el botón play que hay en la parte inferior derecha de la página web (el botón que se encuentra encerrado en el cuadro rojo).
+
+![]()
+
+Cuando empiece a ejecutar el programa aparecerá la pantalla de ejecución que mostrará una imagen de la placa, la cual estará ejecutando el código correctamente como se puede apreciar en la imagen anterior. 
+
+15.1.3 Ejecución del programa para la función Música 
+
+Para poder ejecutar correctamente esta función primero se debe ingresar a la página web descrita, donde parecerá la siguiente pantalla. 
+
+![]()
+
+Para poder utilizar esta página no se necesita tener cuenta, es una página de libre acceso que permite realizar simular el comportamiento de la placa Micro:bit. Primero se debe crear un nuevo proyecto para poder acceder a la placa, y para eso se debe selecciona el recuadro morado con la imagen de un “+” que dice “Nuevo Poryecto”.
+
+![]()
+
+Cuando se selecciona la opción “Nuevo Proyecto”, aparecerá de inmediato una ventana de mensaje donde pide que se le ponga nombre al proyecto. Una vez puesto el nombre del proyecto se selecciona opción “Crear” y el proyecto es creado. 
+
+![]()
+
+Cuando el proyecto es creado aparece la pantalla como se muestra en la imagen anterior. La página web permite porgramar tanto el código de bloques como en lenguaje Python. Para poder utilizar el código del archivo .txt, primero se selecciona la opción Python (opción encerrada en el cuadro rojo). 
+
+![]()
+
+Luego de seleccionar la opción Python, se cambiará a la pantalla como se muestra en la imagen anterior. Como en las otras funcionalidades primero se borra el código que sale por defecto y se transcribe el código del archivo .txt. En esta página la ejecución es automática, es decir, que no debe ser inicializada porque la misma página la inicializa de forma automática. 
+
+![]()
+
+![]()
+
+*15.2 Archivos .py*
+
+Los archivos con extensión .py que contiene el código de todos los programas se encuentra ubicado en la carpeta Instaladores del repositorio. 
