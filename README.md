@@ -245,17 +245,164 @@ Este es un ejemplo:
 
 **5. DIAGRAMAS**
 
-Un ejemplo sencillo de la implementación ...
+Se muestra los diagramas de flujo de los programas ejemplo desarrollados a continuación:
+
+1. Para las imágenes
+
+![]()
+
+2. Para los botones
+
+![]()
+
+3. Para el acelerómetro
+
+![]()
+
+4. Para el sensor de temperatura
+
+![]()
+
+5. Para la brújula
+
+![]()
+
+6. Para el módulo de voz
 
 ![]()
 
 **Figura 1: Vista previa de la placa Micro:Bit**
 
 **6. LISTA DE COMPONENTES**
-- Create with Code
+
+Principalmente, nos basamos en los siguientes sitios web para la realización de este trabajo:
+-	https://create.withcode.uk/
+-	https://makecode.microbit.org/#editor 
 
 **7. EXPLICACIÓN DEL CÓDIGO FUENTE**
 
+La placa Micro:bit posee distintos módulos que permiten realizar varias aplicaciones. De los módulos que ofrece la placa, a continuación, se mostrará un ejemplo para explicar el funcionamiento del módulo de Imágenes, Botones, Acelerómetro, Brújula, Sensor de temperatura y Módulo de voz. Para todos los programas, primero se debe importar la librería en create.withcode para poder utilizar la placa Micro:bit
+
+![]()
+
+*7.1.Imágen*
+
+Para realizar imágenes utilizando esta placa es posible a través del manejo de los leds que conforman el display de la placa. La placa Micro:bit cuenta con 25 leds colocados en una matriz de 5x5. Se puede controlar la intensidad luminosa de cada uno de los leds del display; el rango de luminosidad va de 0 al 9, teniendo el numero 0 como la luminosidad mínima (apagado) y el 9 como luminosidad máxima (con mayor brillo). 
+El display funciona como una matriz, como cada uno de los leds se comporta de forma independiente se puede colocar la intensidad luminosa que se desee.
+
+![]()
+
+El código anterior muestra como la variable boat (bote) se le es asignada el comando Image. Este comando permite utilizar los leds del display, donde la imagen se formará a partir de la matriz ingresada como argumento. Como se dijo el display se comporta como una matriz, para poder realizar la imagen de un bote se le asigna al segundo y al cuarto de la primera, segunda y tercera fila el valor de 5 en el rango de luminosidad, mientras que al resto de leds se le asignan un valor de cero para que estos no se prendan. En la cuarta fila todos los leds son asignados el valor de 9, que es el valor máximo en el rango de luminosidad, para la quinta y última fila el segundo, tercer y cuarto leds son asignados el valor de 9, mientras que el primer y último led de la fila de encuentran con el valor de cero, esto para que se mantengan apagados.
+
+![]()
+
+Para mostrar el valor de la variable boat en el display de la placa se debe utilizar el comando show del display. El comando show permite visualizar a través del display el valor de una variable. El código completo quedaría de la siguiente forma.
+
+![]()
+
+El resultado de la aplicación el código en la página create.withcode se puede visualizar a continuación.
+
+![]()
+
+**Figura 9: Simulación de la imagen de barco en el display de la placa MIcro:bit**
+
+*7.2.Botones*
+
+La placa Micro:bit posee dos botones denominados A y B, estos se encuentran uno en cada lado del display. 
+Los botones funcionan de forma independiente; para poder utilizarlos después de haber importado la librería microbit, se debe utilizar el comando “button” seguido del nombre del botón que se desea utilizar. El comando button posee la funcionalidad is_pressed(), esta función permite ejecutar una acción mientras el botón es presionado. 
+
+![]()
+
+A continuación, una aplicación de los botones utilizando la funcion is_pressed().
+
+![]()
+
+Para mostrar el funcionamiento de los botones de recurrió a un bucle while, el cual se mantiene como un bucle infinito dado que no se cambia la condición. La primera validación que realiza el programa es cuando ninguno de los botones es presionado. Mientras ninguno de los botones es presionado se mostrará en el display la imagen de una carita triste, utilizando la función show del display y utilizando una de las imágenes predeterminadas del comando Image. 
+La segunda validación que realiza el programa es con el botón A, cuando este botón sea presionado se mostrará en el display de la placa la imagen de una carita feliz. Esto se puede hacer a través de la función show del display y utilizando la imagen predeterminada del comando Image. 
+La tercera y última validación que realiza el programa es con el botón B. Cuando este sea presionado ejecuta la función break(), esta función da por terminado el bucle while para dar paso a la última línea de código. La última línea utiliza la función clean(), la cual apaga todos los leds del display, dando por terminado el programa.
+Los resultados del programa se muestran a continuación.
+
+Esta imagen muestra el resultado del display cuando no se presiona ninguno de l
+
+![]()
+
+**Figura 10: Simulación de una carita triste en el display de la placa Micro:bit**
+
+Cuando el botón A es presionado se cambia la carita triste por una carita feliz. 
+
+![]()
+
+**Figura 11: Simulación de una carita feliz en el display de la placa Micro:bit**
+
+Cuando el botón B es presionado se limpia el display, dando por terminado su ejecución el programa.
+
+![]()
+
+**Figura 12: Simulación terminada después de pulsar el botón B**
+
+*7.3. Acelerómetro*
+
+Una de las funciones que posee el acelerómetro es la función shake. A continuación, una aplicación del acelerómetro utilizando la función shake.
+
+![]()
+
+El código mostrado es un programa que simula las predicciones de una bola 8. Antes de comenzar cualquier programa se deben importar las librerías a utilizar en el programa, en este caso de la bola 8 se procede a utilizar las librerías microbit y random. La primera permite acceder a la placa Micro:bit y la segunda permite seleccionar cualquier cosa de forma aleatoria.
+
+![]()
+
+La bola 8 cuenta con varias respuestas que cuando es agitada muestra una de ellas. De la misma forma a la variable answer se le asignó una matriz con todas las respuestas que tendrá el programa.
+
+![]()
+
+Para realizar todas las funciones se utilizó un ciclo while infinito donde no se cambia la condición. La primera función que ejecuta el programa es mostrar en el display la imagen de un 8 mientras que no se utilice la función shake del acelerómetro. 
+
+![]()
+
+Cuando se selecciona la función shake del acelerómetro, el programa limpia el display y muestra en el display la respuesta que fue seleccionada de forma aleatoria de la matriz asignada a la variable answer y lo hace utilizando la función scroll del display y la función choice de la librería random. La función scroll hace que el display se comporte como un letrero donde se muestra un mensaje completo por intervalos de tiempo. La función choice escoge, de forma aleatoria, un objeto dentro de un conjunto.
+
+El programa seguirá ejecutándose hasta que se detenga la simulación. Los resultados del programa se pueden apreciar a continuación.
+
+Como se puede observar, se muestra en la pantalla del display la imagen de un 8 mientras no se seleccione la función shake del acelerómetro. 
+
+![]()
+
+**Figura 12: Simulación de la bola 8 en la placa Micro:bit**
+
+Cuando es selecciona la función shake del acelerómetro se comienza a visualizar el mensaje seleccionado de forma aleatoria. Una vez que el mensaje fue mostrado, el display vuelve a mostrar la imagen del 8 hasta que se vuelva a seleccionar la función shake.
+
+![]()
+
+**Figura 13: Despliegue de la respuesta después de pulsar el botón donde activa “shake”**
+
+*7.4. Sensor de Temperatura*
+
+La placa Micro:bit cuenta con un sensor de temperatura, la cual puede ser utilizada para poder leer la temperatura del ambiente. A continuación, un programa que permite leer la temperatura ambiente utilizando el sensor de temperatura de la placa Micro:bit.
+
+![]()
+
+El programa empieza importando la librería microbit para poder utilizar la placa Micro:bit. 
+
+![]()
+
+Se utiiliza en bucle while infinito para que el programa se mantenga siempre en ejecución. El sensor de temperatura de la placa leer la temperatura del ambiente, el dato de la medición es obtenido utilizando la función temperature(). Este dato es guardado en la variable temp. 
+
+![]()
+
+Para poder mostrar el valor de la medición realizada por el sensor de temperatura en el display se debe convertir el dato de tipo numerico a tipo string, debido a que el display solo admite variables tipo string. Para realizar la conversion de utiliza la función str(). El valor de la temperatura se visualiza de forma de letrero gracias a la función scroll() del display. 
+
+Los resultados de la simulación se muestran a continuación.
+
+![]()
+
+**Figura 14: Visualización de la temperatura a través del display de la placa Micro:bit**
+
+Como no se tiene físicamente la placa, se realiza la ejecución del programa a través de la página web create.withcode. Aquí el sensor es reemplazado por una barra que permite variar el valor de la temperatura y ese mismo valor es mostrado en el display. 
+
+*7.5. Brújula*
+
+La placa Micro:bit cuenta con una brújula que puede ser utilizada para distintos propósitos, como por ejemplo para mostrar la ubicación en la que uno se encuentra a través del display. 
+
+![]()
 
 **8. DESCRIPCIÓN DE PRERREQUISITOS Y CONFIGURACIÓN**
 
