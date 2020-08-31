@@ -380,10 +380,6 @@ La placa Micro:bit cuenta con un sensor de temperatura, la cual puede ser utiliz
 
 ![]()
 
-El programa empieza importando la librería microbit para poder utilizar la placa Micro:bit. 
-
-![]()
-
 Se utiiliza en bucle while infinito para que el programa se mantenga siempre en ejecución. El sensor de temperatura de la placa leer la temperatura del ambiente, el dato de la medición es obtenido utilizando la función temperature(). Este dato es guardado en la variable temp. 
 
 ![]()
@@ -401,10 +397,6 @@ Como no se tiene físicamente la placa, se realiza la ejecución del programa a 
 *7.5. Brújula*
 
 La placa Micro:bit cuenta con una brújula que puede ser utilizada para distintos propósitos, como por ejemplo para mostrar la ubicación en la que uno se encuentra a través del display. 
-
-![]()
-
-Se importa la librería microbit para poder utilizar la placa Micro:bit.
 
 ![]()
 
