@@ -73,7 +73,7 @@ BBC microbit es una pequeña tarjeta programable de tan solo 4x5 [cm] diseñada 
 -	Comunicación inalámbrica, vía Radio y Bluetooth
 -	USB y Conector para batería externa
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.16.21.jpeg)
 
 **Figura 1: Vista previa de la placa Micro:Bit**
 
@@ -87,11 +87,11 @@ Ejemplo No. 1:
 
 Programación de emoticón feliz, se escribe:
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.16.28.jpeg)
 
 Se obtiene:
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.16.33.jpeg)
 
 **Figura 2: Visualización de la imagen por medio de datos ingresdados en una matriz**
 
@@ -99,7 +99,7 @@ Fuente:
 
 Adicional, se puede personalizar la figura que se requiere que aparezca de la siguiente manera:
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.16.39.jpeg)
 
 El 0 representa el LED apagado y 5 prendido, podemos poner el número 7, 8 0 9 si se pretende que sea más iluminado el LED. Además, se puede observar cómo se encuentran distribuidos los números en una matriz de 5x5 al igual que los LED’s en las placas, es decir cada número representa cada LED respectivamente.
 
@@ -109,7 +109,7 @@ Es fácil de recordar: la salida es lo que el dispositivo envía al mundo, mient
 
 Esto es notablemente simple:
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.16.48.jpeg)
 
 Todo lo que hace este script es dormir durante diez mil milisegundos (es decir, 10 segundos) y luego se desplaza la cantidad de veces que presionó el botón A. La función de suspensión hará que el micro: bit se suspenda durante una cierta cantidad de milisegundos. Si desea hacer una pausa en su programa, así es como se hace. Una función es como un método, pero no está unida por un punto a un objeto. Hay un objeto llamado button_a y te permite obtener la cantidad de veces que se ha presionado con el método get_presses. Dado que get_presses da un valor numérico y display.scroll solo muestra caracteres, necesitamos convertir el valor numérico en una cadena de caracteres. Hacemos esto con la función str(abreviatura de "cadena"). Este convierte cosas en cadenas de caracteres.(“Buttons — BBC micro:bit MicroPython 1.0.1 documentation,” n.d.).
 
@@ -157,7 +157,7 @@ Devuelve Verdadero o Falso para indicar si el gesto nombrado estuvo activo desde
 
 Devuelve una tupla del historial de gestos. El más reciente aparece en último lugar. También borra el historial de gestos antes de regresar.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.16.58.jpeg)
 
 **Figura 5: Gráfico que muestra el funcionamiento bpasico del acelerómetro**
 
@@ -201,7 +201,7 @@ Da el rumbo de la brújula, calculado a partir de las lecturas anteriores, como 
 
 Devuelve una indicación entera de la magnitud del campo magnético alrededor del dispositivo en nano tesla.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.17.06.jpeg)
 
 **Figura 6: Brújula como muestra**
 
@@ -215,7 +215,7 @@ Este módulo permite acceder al termómetto electrónico incorporado. Su impleme
 
 Se propone iniciar el programa usando el evento “para siempre”. Añadir el bloque, localizado en la categoría Básico, mostrar número. El valor obtenido del sensor de temperatura será mostrado por el comando del mismo nombre. A continuación, se borra la pantalla y se introduce una pausa de 1000 ms. Quedando el programa de la siguiente forma. En el simulador aparecerá una barra vertical que permite modificar la temperatura, siendo la temperatura marcada la mostrada en el panel LED.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.17.12.jpeg)
 
 **Figura 7: Visualización de la temperatura en los LEDs**
 
@@ -225,7 +225,7 @@ Fuente:
 
 Micro: bit viene con un potente módulo de música y sonido. Es muy fácil generar pitidos y bloops desde el dispositivo si conecta un altavoz. Utilice pinzas de cocodrilo para conectar el pin 0 y GND a las entradas positivas y negativas del altavoz; no importa en qué sentido estén conectados al altavoz.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.17.17.jpeg)
 
 **Figura 8: Tono de música**
 
@@ -233,15 +233,17 @@ Fuente:
 
 Se importa la siguiente librería
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.17.29.jpeg)
+
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.17.34.jpeg)
 
 Y se puede reporducir algunas melodías:
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.17.39.jpeg)
 
 Este es un ejemplo:
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.17.48.jpeg)
 
 **5. DIAGRAMAS**
 
@@ -249,27 +251,27 @@ Se muestra los diagramas de flujo de los programas ejemplo desarrollados a conti
 
 1. Para las imágenes
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.17.53.jpeg)
 
 2. Para los botones
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.18.03.jpeg)
 
 3. Para el acelerómetro
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.18.12.jpeg)
 
 4. Para el sensor de temperatura
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.18.20.jpeg)
 
 5. Para la brújula
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.18.27.jpeg)
 
 6. Para el módulo de voz
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.18.36.jpeg)
 
 **Figura 1: Vista previa de la placa Micro:Bit**
 
@@ -290,19 +292,19 @@ La placa Micro:bit posee distintos módulos que permiten realizar varias aplicac
 Para realizar imágenes utilizando esta placa es posible a través del manejo de los leds que conforman el display de la placa. La placa Micro:bit cuenta con 25 leds colocados en una matriz de 5x5. Se puede controlar la intensidad luminosa de cada uno de los leds del display; el rango de luminosidad va de 0 al 9, teniendo el numero 0 como la luminosidad mínima (apagado) y el 9 como luminosidad máxima (con mayor brillo). 
 El display funciona como una matriz, como cada uno de los leds se comporta de forma independiente se puede colocar la intensidad luminosa que se desee.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.27.42.jpeg)
 
 El código anterior muestra como la variable boat (bote) se le es asignada el comando Image. Este comando permite utilizar los leds del display, donde la imagen se formará a partir de la matriz ingresada como argumento. Como se dijo el display se comporta como una matriz, para poder realizar la imagen de un bote se le asigna al segundo y al cuarto de la primera, segunda y tercera fila el valor de 5 en el rango de luminosidad, mientras que al resto de leds se le asignan un valor de cero para que estos no se prendan. En la cuarta fila todos los leds son asignados el valor de 9, que es el valor máximo en el rango de luminosidad, para la quinta y última fila el segundo, tercer y cuarto leds son asignados el valor de 9, mientras que el primer y último led de la fila de encuentran con el valor de cero, esto para que se mantengan apagados.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.27.53.jpeg)
 
 Para mostrar el valor de la variable boat en el display de la placa se debe utilizar el comando show del display. El comando show permite visualizar a través del display el valor de una variable. El código completo quedaría de la siguiente forma.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.30.14.jpeg)
 
 El resultado de la aplicación el código en la página create.withcode se puede visualizar a continuación.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.30.22.jpeg)
 
 **Figura 9: Simulación de la imagen de barco en el display de la placa MIcro:bit**
 
@@ -311,11 +313,11 @@ El resultado de la aplicación el código en la página create.withcode se puede
 La placa Micro:bit posee dos botones denominados A y B, estos se encuentran uno en cada lado del display. 
 Los botones funcionan de forma independiente; para poder utilizarlos después de haber importado la librería microbit, se debe utilizar el comando “button” seguido del nombre del botón que se desea utilizar. El comando button posee la funcionalidad is_pressed(), esta función permite ejecutar una acción mientras el botón es presionado. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.30.29.jpeg)
 
 A continuación, una aplicación de los botones utilizando la funcion is_pressed().
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.30.36.jpeg)
 
 Para mostrar el funcionamiento de los botones de recurrió a un bucle while, el cual se mantiene como un bucle infinito dado que no se cambia la condición. La primera validación que realiza el programa es cuando ninguno de los botones es presionado. Mientras ninguno de los botones es presionado se mostrará en el display la imagen de una carita triste, utilizando la función show del display y utilizando una de las imágenes predeterminadas del comando Image. 
 La segunda validación que realiza el programa es con el botón A, cuando este botón sea presionado se mostrará en el display de la placa la imagen de una carita feliz. Esto se puede hacer a través de la función show del display y utilizando la imagen predeterminada del comando Image. 
@@ -324,19 +326,19 @@ Los resultados del programa se muestran a continuación.
 
 Esta imagen muestra el resultado del display cuando no se presiona ninguno de l
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.30.45.jpeg)
 
 **Figura 10: Simulación de una carita triste en el display de la placa Micro:bit**
 
 Cuando el botón A es presionado se cambia la carita triste por una carita feliz. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.30.50.jpeg)
 
 **Figura 11: Simulación de una carita feliz en el display de la placa Micro:bit**
 
 Cuando el botón B es presionado se limpia el display, dando por terminado su ejecución el programa.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.30.58.jpeg)
 
 **Figura 12: Simulación terminada después de pulsar el botón B**
 
@@ -344,19 +346,19 @@ Cuando el botón B es presionado se limpia el display, dando por terminado su ej
 
 Una de las funciones que posee el acelerómetro es la función shake. A continuación, una aplicación del acelerómetro utilizando la función shake.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.31.07.jpeg)
 
 El código mostrado es un programa que simula las predicciones de una bola 8. Antes de comenzar cualquier programa se deben importar las librerías a utilizar en el programa, en este caso de la bola 8 se procede a utilizar las librerías microbit y random. La primera permite acceder a la placa Micro:bit y la segunda permite seleccionar cualquier cosa de forma aleatoria.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.31.28.jpeg)
 
 La bola 8 cuenta con varias respuestas que cuando es agitada muestra una de ellas. De la misma forma a la variable answer se le asignó una matriz con todas las respuestas que tendrá el programa.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.31.36.jpeg)
 
 Para realizar todas las funciones se utilizó un ciclo while infinito donde no se cambia la condición. La primera función que ejecuta el programa es mostrar en el display la imagen de un 8 mientras que no se utilice la función shake del acelerómetro. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.31.54.jpeg)
 
 Cuando se selecciona la función shake del acelerómetro, el programa limpia el display y muestra en el display la respuesta que fue seleccionada de forma aleatoria de la matriz asignada a la variable answer y lo hace utilizando la función scroll del display y la función choice de la librería random. La función scroll hace que el display se comporte como un letrero donde se muestra un mensaje completo por intervalos de tiempo. La función choice escoge, de forma aleatoria, un objeto dentro de un conjunto.
 
@@ -364,13 +366,13 @@ El programa seguirá ejecutándose hasta que se detenga la simulación. Los resu
 
 Como se puede observar, se muestra en la pantalla del display la imagen de un 8 mientras no se seleccione la función shake del acelerómetro. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.32.01.jpeg)
 
 **Figura 12: Simulación de la bola 8 en la placa Micro:bit**
 
 Cuando es selecciona la función shake del acelerómetro se comienza a visualizar el mensaje seleccionado de forma aleatoria. Una vez que el mensaje fue mostrado, el display vuelve a mostrar la imagen del 8 hasta que se vuelva a seleccionar la función shake.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.32.07.jpeg)
 
 **Figura 13: Despliegue de la respuesta después de pulsar el botón donde activa “shake”**
 
@@ -378,17 +380,17 @@ Cuando es selecciona la función shake del acelerómetro se comienza a visualiza
 
 La placa Micro:bit cuenta con un sensor de temperatura, la cual puede ser utilizada para poder leer la temperatura del ambiente. A continuación, un programa que permite leer la temperatura ambiente utilizando el sensor de temperatura de la placa Micro:bit.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.32.19.jpeg)
 
 Se utiiliza en bucle while infinito para que el programa se mantenga siempre en ejecución. El sensor de temperatura de la placa leer la temperatura del ambiente, el dato de la medición es obtenido utilizando la función temperature(). Este dato es guardado en la variable temp. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.32.40.jpeg)
 
 Para poder mostrar el valor de la medición realizada por el sensor de temperatura en el display se debe convertir el dato de tipo numerico a tipo string, debido a que el display solo admite variables tipo string. Para realizar la conversion de utiliza la función str(). El valor de la temperatura se visualiza de forma de letrero gracias a la función scroll() del display. 
 
 Los resultados de la simulación se muestran a continuación.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.01.jpeg)
 
 **Figura 14: Visualización de la temperatura a través del display de la placa Micro:bit**
 
@@ -398,22 +400,22 @@ Como no se tiene físicamente la placa, se realiza la ejecución del programa a 
 
 La placa Micro:bit cuenta con una brújula que puede ser utilizada para distintos propósitos, como por ejemplo para mostrar la ubicación en la que uno se encuentra a través del display. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.10.jpeg)
 
 Para poder usar la brújula primero se la deba calibrar y esto se lo hace mediante la funcion calibrate(), es una funcion propia de la brujula. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.18.jpeg)
 
 Se utiliza un bucle while infinito para que el programa se mantenga corriendo. La validación que realiza el programa es con el botón A, cuando se presiona este botón se mostrará en el display la ubicación en la que el usuario se encuentra. 
 La ubicación es mostrada a través de la función heading() de la brújula, esta función da el rumbo que ha tomado la brújula a partir de mediciones anteriores como un número de tipo int en el rango de 0° a 360°, tomando como punto de referencia el Norte. Como el display solo admite variables tipo string se debe convertir la medición de la brújula de tipo int a tipo string utilizando la función str().
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.27.jpeg)
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.32.jpeg)
 
 **Figura 15:Visualización de la posición a través del display de la placa Micro:bit**
 
-*7.6. Brújula*
+*7.7. Módulo de voz*
 
 Para desarrollar el problema de la música, se debe implementar otro simulador llamado “micro:bit”. El presente simulador que permite programar la placa utilizando el lenguaje de programación Python y por medio de programación por bloques. Para poder utilizar el simulador se debe ingresar al siguiente link.
 
@@ -421,25 +423,25 @@ https://makecode.microbit.org/#editor
 
 La placa Micro:bit cuenta con un radio y junto con este dispositivo se cuenta también con la librería “music”. Esta librería permite realizar programas que sean capaces de emitir sonido que va de la emisión de las notas musicales en forma de tonos hasta emisión de melodías completas. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.39.jpeg)
 
 El programa empieza con un bucle while infinito, debido a que no se cambia la condición inicial. Una vez que ingresa en el bucle, el problema realiza la primera validación. El comando input.button_is_pressed(Button.A) permite obtener el estado en el que se encuentra el botón, en este caso el botón A. Si el botón A es presionado entonces se configura el volumen del dispositivo por medio del comando music.set_volume(50) que permite cambiar el valor del volumen predeterminado. En este caso se cambia el valor predeterminado de 127 al valor de 50. Por medio del comando music.play_melody("E D G F B A C5 B ", 200) se puede reproducir la melodía que se sea de las que se encuentran grabadas en la placa, para el caso del botón A se colocó la melodía Rising y para el botón B se colocó la melodía Mystery.  
 
 En la imagen se puede observar la simulación del código de la música. Una forma de verificar que el programa funciona correctamente es visualizando en la parte baja de la placa. A lado del pin 0 se puede visualizar el número -8, este número demuestra que el programa funciona correctamente. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.46.jpeg)
 
 **Figura 16: Simulación de la música en la plataforma makecode.microbit**
 
 Al igual que con el botón A, en botón B se puede verificar su correcto funcionamiento por medio de número -8 que aparece cuando este es presionado. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.52.jpeg)
 
 **Figura 17: Simulación de la música en la plataforma makecode.microbit**
 
 Para una mejor comprensión del código, la plataforma permite la utilización de la programación por bloques convirtiendo el código de lenguaje Python a lenguaje por bloques. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.33.59.jpeg)
 
 **Figura 18: Código del programa de música en lenguaje de programación por bloques**
 
@@ -492,17 +494,17 @@ https://makecode.microbit.org/
 
 Luego de haber descargado el archivo .txt que contiene todos los programas, se debe ingresar a la página web antes descrita. Cuando se haya ingresado debe aparecer la siguiente pantalla.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.34.12.jpeg)
 
 Primero se debe borrar el código que viene por defecto en la página web, esto con la finalidad de copiar y pegar uno de los códigos de cualquiera de las cinco funcionalidades. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.34.17.jpeg)
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.34.24.jpeg)
 
 En las anteriores imágenes se ve un ejemplo del procedimiento descrito. Para este ejemplo se seleccionó el código de la función Botones del archivo .txt y el código fue pegado en la página web. Para poder correr el programa se debe hacer click en el botón play que hay en la parte inferior derecha de la página web (el botón que se encuentra encerrado en el cuadro rojo).
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.34.30.jpeg)
 
 Cuando empiece a ejecutar el programa aparecerá la pantalla de ejecución que mostrará una imagen de la placa, la cual estará ejecutando el código correctamente como se puede apreciar en la imagen anterior. 
 
@@ -510,25 +512,25 @@ Cuando empiece a ejecutar el programa aparecerá la pantalla de ejecución que m
 
 Para poder ejecutar correctamente esta función primero se debe ingresar a la página web descrita, donde parecerá la siguiente pantalla. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.34.40.jpeg)
 
 Para poder utilizar esta página no se necesita tener cuenta, es una página de libre acceso que permite realizar simular el comportamiento de la placa Micro:bit. Primero se debe crear un nuevo proyecto para poder acceder a la placa, y para eso se debe selecciona el recuadro morado con la imagen de un “+” que dice “Nuevo Poryecto”.
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.34.47.jpeg)
 
 Cuando se selecciona la opción “Nuevo Proyecto”, aparecerá de inmediato una ventana de mensaje donde pide que se le ponga nombre al proyecto. Una vez puesto el nombre del proyecto se selecciona opción “Crear” y el proyecto es creado. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.34.56.jpeg)
 
 Cuando el proyecto es creado aparece la pantalla como se muestra en la imagen anterior. La página web permite porgramar tanto el código de bloques como en lenguaje Python. Para poder utilizar el código del archivo .txt, primero se selecciona la opción Python (opción encerrada en el cuadro rojo). 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.35.03.jpeg)
 
 Luego de seleccionar la opción Python, se cambiará a la pantalla como se muestra en la imagen anterior. Como en las otras funcionalidades primero se borra el código que sale por defecto y se transcribe el código del archivo .txt. En esta página la ejecución es automática, es decir, que no debe ser inicializada porque la misma página la inicializa de forma automática. 
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.35.08.jpeg)
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2011.35.15.jpeg)
 
 *15.2 Archivos .py*
 
