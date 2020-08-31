@@ -209,7 +209,39 @@ Fuente: https://www.importancia.org/brujula.php
 
 *4.1.7. Uso del sensor de temperatura*
 
-Este módulo permite acceder al termómetto electrónico incorporado. 
+Este módulo permite acceder al termómetto electrónico incorporado. Su implementación es sencilla por lo que en este diagrama de bloques da su explicación.
+
+![]()
+
+Se propone iniciar el programa usando el evento “para siempre”. Añadir el bloque, localizado en la categoría Básico, mostrar número. El valor obtenido del sensor de temperatura será mostrado por el comando del mismo nombre. A continuación, se borra la pantalla y se introduce una pausa de 1000 ms. Quedando el programa de la siguiente forma. En el simulador aparecerá una barra vertical que permite modificar la temperatura, siendo la temperatura marcada la mostrada en el panel LED.
+
+![]()
+
+**Figura 7: Visualización de la temperatura en los LEDs**
+
+Fuente: 
+
+*4.1.8. Generación de sonidos con el módulo de voz*
+
+Micro: bit viene con un potente módulo de música y sonido. Es muy fácil generar pitidos y bloops desde el dispositivo si conecta un altavoz. Utilice pinzas de cocodrilo para conectar el pin 0 y GND a las entradas positivas y negativas del altavoz; no importa en qué sentido estén conectados al altavoz.
+
+![]()
+
+**Figura 8: Tono de música**
+
+Fuente:
+
+Se importa la siguiente librería
+
+![]()
+
+Y se puede reporducir algunas melodías:
+
+![]()
+
+Este es un ejemplo:
+
+![]()
 
 **5. DIAGRAMAS**
 
