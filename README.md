@@ -464,7 +464,7 @@ Para poder ejecutar de manera eficiente y sin ningún tipo de inconveniente, sim
 
 **11. CRONOGRAMA**
 
-![]()
+![](https://github.com/aledomesalazar/Trabajo-de-Investigacion-3/blob/master/img/WhatsApp%20Image%202020-08-31%20at%2013.39.24.jpeg)
 
 **12. BIBLIOGRAFÍA**
 
